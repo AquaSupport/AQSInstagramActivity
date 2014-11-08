@@ -15,6 +15,9 @@
 		D42B17521A0DE2BE00A64B1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42B17511A0DE2BE00A64B1A /* Images.xcassets */; };
 		D42B17551A0DE2BE00A64B1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D42B17531A0DE2BE00A64B1A /* LaunchScreen.xib */; };
 		D42B17611A0DE2BE00A64B1A /* AQSInstagramActivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D42B17601A0DE2BE00A64B1A /* AQSInstagramActivityTests.m */; };
+		D42B176C1A0DE42700A64B1A /* AQSInstagramActivity.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42B176B1A0DE42700A64B1A /* AQSInstagramActivity.xcassets */; };
+		D42B176F1A0DE43000A64B1A /* AQSInstagramActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = D42B176E1A0DE43000A64B1A /* AQSInstagramActivity.m */; };
+		D42B17711A0DE94800A64B1A /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D42B17701A0DE94800A64B1A /* test.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		D42B175A1A0DE2BE00A64B1A /* AQSInstagramActivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AQSInstagramActivityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42B175F1A0DE2BE00A64B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D42B17601A0DE2BE00A64B1A /* AQSInstagramActivityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AQSInstagramActivityTests.m; sourceTree = "<group>"; };
+		D42B176B1A0DE42700A64B1A /* AQSInstagramActivity.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AQSInstagramActivity.xcassets; sourceTree = "<group>"; };
+		D42B176D1A0DE43000A64B1A /* AQSInstagramActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQSInstagramActivity.h; sourceTree = "<group>"; };
+		D42B176E1A0DE43000A64B1A /* AQSInstagramActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQSInstagramActivity.m; sourceTree = "<group>"; };
+		D42B17701A0DE94800A64B1A /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +116,7 @@
 				D42B17481A0DE2BE00A64B1A /* AppDelegate.h */,
 				D42B17491A0DE2BE00A64B1A /* AppDelegate.m */,
 				D42B174B1A0DE2BE00A64B1A /* ViewController.h */,
+				D42B17701A0DE94800A64B1A /* test.jpg */,
 				D42B174C1A0DE2BE00A64B1A /* ViewController.m */,
 				D42B174E1A0DE2BE00A64B1A /* Main.storyboard */,
 				D42B17511A0DE2BE00A64B1A /* Images.xcassets */,
@@ -147,6 +155,9 @@
 		D42B176A1A0DE40700A64B1A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D42B176B1A0DE42700A64B1A /* AQSInstagramActivity.xcassets */,
+				D42B176D1A0DE43000A64B1A /* AQSInstagramActivity.h */,
+				D42B176E1A0DE43000A64B1A /* AQSInstagramActivity.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -234,6 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D42B17501A0DE2BE00A64B1A /* Main.storyboard in Resources */,
+				D42B17711A0DE94800A64B1A /* test.jpg in Resources */,
+				D42B176C1A0DE42700A64B1A /* AQSInstagramActivity.xcassets in Resources */,
 				D42B17551A0DE2BE00A64B1A /* LaunchScreen.xib in Resources */,
 				D42B17521A0DE2BE00A64B1A /* Images.xcassets in Resources */,
 			);
@@ -287,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D42B174D1A0DE2BE00A64B1A /* ViewController.m in Sources */,
+				D42B176F1A0DE43000A64B1A /* AQSInstagramActivity.m in Sources */,
 				D42B174A1A0DE2BE00A64B1A /* AppDelegate.m in Sources */,
 				D42B17471A0DE2BE00A64B1A /* main.m in Sources */,
 			);
@@ -414,6 +428,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -425,6 +440,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

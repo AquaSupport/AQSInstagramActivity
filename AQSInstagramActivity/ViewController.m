@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "AQSInstagramActivity.h"
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    UIActivity *activity = [[AQSInstagramActivity alloc] init];
+    NSArray *items = @[@"whoa", [UIImage imageNamed:@"test.jpg"]];
+    
+    UIActivityViewController *viewController = [[UIActivityViewController alloc] initWithActivityItems:items applicationActivities:@[activity]];
+    
+    [self presentViewController:viewController animated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning {
